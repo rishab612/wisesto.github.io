@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+  <div id="confetti-wrapper">
+</div>
+    <div class="card">
+        <div id="greeting">
+            <h1><i class="fas fa-gift"></i> Happy Birthday, <span id="cardName"></span>!</h1>
+            <h2>You are now <span id="cardAge"></span> years old!</h2>
+            <button id="nextButton"><i class="fas fa-arrow-down"></i> Next</button>
+        </div>
+        
+        <div id="cakeSection" class="hidden">
+            <h2><i class="fas fa-birthday-cake"></i> Blow the Candles!</h2>
+            <div class="cake">
+                <img src="cake.png" alt="Cake">
+                <div class="candles" id="candlesContainer"></div>
+            </div>
+        </div>
+
+        <div id="finalMessage" class="hidden">
+            <h2><i class="fas fa-envelope"></i> Message for you:</h2>
+            <p id="cardMessage"></p>
+        </div>
+    </div>
+    <audio id="birthdaySong" src="happy-birthday-to-you-62214.mp3"></audio>
+
+    <script src="card-script.js"></script>
+</body>
+</html>
